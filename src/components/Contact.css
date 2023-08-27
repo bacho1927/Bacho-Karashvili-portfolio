@@ -1,0 +1,47 @@
+
+.main-contact-container{
+    background-color: rgb(53, 82, 160);
+    padding: 100px;
+    display: flex;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    background-image: linear-gradient(135deg, rgb(53, 82, 160), rgb(53, 82, 160));
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header{
+    color: white;
+    font-size: 40px;
+    opacity: 0;
+}
+
+.contact-container{
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container h2{
+    color:white;
+}
+.contact{
+    color: white;
+    font-size: 25px;
+    border:2px solid white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.top{
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.top:hover{
+    color:rgb(118, 139, 198);;
+}
