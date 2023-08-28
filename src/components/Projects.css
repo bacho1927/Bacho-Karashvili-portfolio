@@ -94,4 +94,8 @@
     .demo a {
         font-size: 1em;
     }
+
+    .projects-container {
+        width: 100%;
+    }
 }
