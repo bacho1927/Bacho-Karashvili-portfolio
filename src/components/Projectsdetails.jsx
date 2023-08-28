@@ -33,7 +33,7 @@ const weatherApp = [
         src: weather,
         title: 'Weather App',
         headerImg: cloud,
-        projectParagraph: ' Rent the perfect van to make your perfect road trip.',
+        projectParagraph: ' Welcome to Weather App: Your Personal Weather Companion',
         gitImg: github,
         codeLink: "https://github.com/bacho1927/weather-app",
         demoLink: "https://bacho-karashvili-weather-app.netlify.app/"
