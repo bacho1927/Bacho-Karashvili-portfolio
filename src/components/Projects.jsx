@@ -1,16 +1,16 @@
-import React, {useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Reveal from './Reveal';
 import './Projects.css'
-import { passwordGeneratorData, vanLifeData } from './Projectsdetails'
+import { passwordGeneratorData, vanLifeData, weatherApp } from './Projectsdetails'
 
-export default function Projects(){
-    const {elementRef , shouldAnimate} = Reveal()
+export default function Projects() {
+    const { elementRef, shouldAnimate } = Reveal()
 
-    const allProjects = [...passwordGeneratorData, ...vanLifeData];
+    const allProjects = [...passwordGeneratorData, ...vanLifeData, ...weatherApp];
 
 
     const projects = allProjects.map((el, index) => (
-        <div className={`projects-container ${shouldAnimate ? 'reveal-side' : ''}`} style={{animationDelay: '1200ms'}} Key={index} ref={elementRef}>
+        <div className={`projects-container ${shouldAnimate ? 'reveal-side' : ''}`} style={{ animationDelay: '1200ms' }} Key={index} ref={elementRef}>
             <div className='project-header-container'>
                 <img className='projects-header-photo' src={el.src} />
                 <div className='project-description'>
@@ -24,15 +24,15 @@ export default function Projects(){
             </div>
         </div>
     ))
-    return(
+    return (
         <>
-        <div id="projects" className={`main-projects-container ${shouldAnimate ? 'reveal-side' : ''}`} >
-            <h1 style={{animationDelay: '500ms'}}>Projects</h1>
+            <div id="projects" className={`main-projects-container ${shouldAnimate ? 'reveal-side' : ''}`} >
+                <h1 style={{ animationDelay: '500ms' }}>Projects</h1>
 
-            {projects}
+                {projects}
 
-        </div>
-    </>
-        
+            </div>
+        </>
+
     )
 }

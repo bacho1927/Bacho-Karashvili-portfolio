@@ -3,6 +3,8 @@ import passwordGenerator from '../images/password-generator.png'
 import vanLife from '../images/van-life.png'
 import vanPhoto from '../images/van-photo.jpg'
 import lock from '../images/lock.jpg'
+import weather from '../images/weather.png'
+import cloud from '../images/cloud.jpg'
 const passwordGeneratorData = [
     {
         src: passwordGenerator,
@@ -25,4 +27,16 @@ const vanLifeData = [
         demoLink: "https://bacho-karashvili-van-life.netlify.app/"
     }
 ]
-export { passwordGeneratorData, vanLifeData }
+
+const weatherApp = [
+    {
+        src: weather,
+        title: 'Weather App',
+        headerImg: cloud,
+        projectParagraph: ' Rent the perfect van to make your perfect road trip.',
+        gitImg: github,
+        codeLink: "https://github.com/bacho1927/weather-app",
+        demoLink: "https://bacho-karashvili-weather-app.netlify.app/"
+    }
+]
+export { passwordGeneratorData, vanLifeData, weatherApp }

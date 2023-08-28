@@ -8,7 +8,7 @@
     font-size: 50px;
     margin: 0;
     padding: 20px;
-    
+
 }
 
 .projects-container {
@@ -77,18 +77,21 @@
 }
 
 @media (max-width:870px) {
-    .project-description{
+    .project-description {
         width: 90%;
     }
-.demo{
-    display: flex;
-    flex-direction: column;
-}
-    .demo a+a{
-        margin: 0;
-        
+
+    .demo {
+        display: flex;
+        flex-direction: column;
     }
-    .demo a{
+
+    .demo a+a {
+        margin: 0;
+
+    }
+
+    .demo a {
         font-size: 1em;
     }
 }
