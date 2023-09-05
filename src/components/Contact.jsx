@@ -12,7 +12,7 @@ export default function Contact() {
                 <div className={`contact-container ${shouldAnimate ? 'reveal-up' : ''}`} style={{ animationDelay: '2000ms' }} >
                     <h2 >Would you like to work with me?</h2>
                     <a className='contact' href="mailto:Bacho.karashvili@gmail.com">Email: Bacho.Karashvili@gmail.com</a>
-                    <a className='contact' href="https://www.linkedin.com/in/bacho-karashvili-90b3b1269/">LinkedIn: linkedin.com/in/bacho-karashvili</a>
+                    <a className='contact' href="https://www.linkedin.com/in/bacho-karashvili/">LinkedIn: linkedin.com/in/bacho-karashvili</a>
 
                 </div>
                 <Link
