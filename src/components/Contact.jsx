@@ -7,8 +7,8 @@ export default function Contact() {
 
     return (
         <>
-            <div className='main-contact-container' >
-                <h1 className={`contact-header ${shouldAnimate ? 'reveal-side' : ''}`} ref={elementRef} style={{ animationDelay: '1000ms' }}>Contact</h1>
+            <div className='main-contact-container' ref={elementRef} >
+                <h1 className={`contact-header ${shouldAnimate ? 'reveal-side' : ''}`} style={{ animationDelay: '1000ms' }}>Contact</h1>
                 <div className={`contact-container ${shouldAnimate ? 'reveal-up' : ''}`} style={{ animationDelay: '2000ms' }} >
                     <h2 >Would you like to work with me?</h2>
                     <a className='contact' href="mailto:Bacho.karashvili@gmail.com">Email: Bacho.Karashvili@gmail.com</a>
