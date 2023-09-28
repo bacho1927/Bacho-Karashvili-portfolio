@@ -1,24 +1,27 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import Reveal from './Reveal';
 import './Projects.css'
-import { passwordGeneratorData, vanLifeData, weatherApp } from './Projectsdetails'
+import { passwordGeneratorData, vanLifeData, weatherApp, netflixApp } from './Projectsdetails'
 
 export default function Projects() {
     const { elementRef, shouldAnimate } = Reveal()
 
-    const allProjects = [...passwordGeneratorData, ...vanLifeData, ...weatherApp];
+    const allProjects = [...passwordGeneratorData, ...vanLifeData, ...weatherApp, ...netflixApp];
 
 
     const projects = allProjects.map((el, index) => (
         <div className={`projects-container ${shouldAnimate ? 'reveal-side' : ''}`} style={{ animationDelay: '1200ms' }} Key={index} ref={elementRef}>
             <div className='project-header-container'>
-                <img className='projects-header-photo' src={el.src} />
+                <img className='projects-header-photo' src={el.src} alt='header-img' />
                 <div className='project-description'>
-                    <h2>{el.title} <img src={el.headerImg} /></h2>
-                    <h4>{el.projectParagraph}</h4>
+                    <div className='project-description-header'>
+                        <h2>{el.title} </h2>
+                        <img src={el.headerImg} alt="title-img" className='header-title-image' />
+                    </div>
+                    <h4 className='project-description-paragraph'>{el.projectParagraph}</h4>
                     <div className='demo'>
-                        <a href={el.demoLink} target="_blank" >Live Demo </a>
-                        <a href={el.codeLink} target='_blank'>Code <img src={el.gitImg} /></a>
+                        <a href={el.demoLink} target="_blank" rel='noreferrer'>Live Demo </a>
+                        <a href={el.codeLink} target='_blank' rel='noreferrer'>Code <img src={el.gitImg} alt='git-img' /></a>
                     </div>
                 </div>
             </div>

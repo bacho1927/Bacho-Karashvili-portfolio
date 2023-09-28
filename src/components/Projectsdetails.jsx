@@ -5,6 +5,9 @@ import vanPhoto from '../images/van-photo.jpg'
 import lock from '../images/lock.jpg'
 import weather from '../images/weather.png'
 import cloud from '../images/cloud.jpg'
+import netflixPhoto from '../images/netflix.png'
+import netflixLogo from '../images/netflixLogo.png'
+
 const passwordGeneratorData = [
     {
         src: passwordGenerator,
@@ -38,5 +41,18 @@ const weatherApp = [
         codeLink: "https://github.com/bacho1927/weather-app",
         demoLink: "https://bacho-karashvili-weather-app.netlify.app/"
     }
+
 ]
-export { passwordGeneratorData, vanLifeData, weatherApp }
+
+const netflixApp = [
+    {
+        src: netflixPhoto,
+        title: 'Netflix Website',
+        headerImg: netflixLogo,
+        projectParagraph: 'Netflix:  Welcome to the world of endless entertainment',
+        gitImg: github,
+        codeLink: "https://github.com/bacho1927/netflix-app",
+        demoLink: "https://bacho-karashvili-netflix-app.netlify.app/"
+    }
+]
+export { passwordGeneratorData, vanLifeData, weatherApp, netflixApp }

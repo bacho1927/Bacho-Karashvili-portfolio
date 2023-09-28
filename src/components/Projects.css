@@ -44,8 +44,13 @@
 .project-header-container img {
     width: 400px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
+.project-description-header {
+    display: flex;
+    align-items: center;
+}
 
 
 .project-description {
@@ -57,7 +62,8 @@
 
 .project-description img {
     width: 40px;
-
+    padding-left: 20px;
+    margin-bottom: 1em;
 }
 
 .project-description h2 {
@@ -76,7 +82,7 @@
     cursor: pointer;
 }
 
-@media (max-width:870px) {
+@media (max-width:898px) {
     .project-description {
         width: 90%;
     }
@@ -97,5 +103,13 @@
 
     .projects-container {
         width: 100%;
+    }
+
+    .project-description-header h2 {
+        font-size: 20px;
+    }
+
+    .project-description-paragraph {
+        font-size: 12px;
     }
 }
