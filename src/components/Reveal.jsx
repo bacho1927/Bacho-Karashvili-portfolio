@@ -1,15 +1,15 @@
-import React, {useRef, useState, useEffect} from "react";
+import { useRef, useState, useEffect } from "react";
 
-export default function Reveal(){
+export default function Reveal() {
     const [shouldAnimate, setShouldAnimate] = useState(false);
     const elementRef = useRef(null);
 
     const handleScroll = () => {
         if (elementRef.current) {
             const elementPosition = elementRef.current.getBoundingClientRect().top;
-    
-            
-            if (elementPosition <= window.innerHeight+250) {
+
+
+            if (elementPosition <= window.innerHeight - 150) {
                 setShouldAnimate(true);
                 window.removeEventListener('scroll', handleScroll);
             }
@@ -23,5 +23,5 @@ export default function Reveal(){
         };
     }, []);
 
-    return {elementRef , shouldAnimate}
+    return { elementRef, shouldAnimate }
 }

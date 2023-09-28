@@ -10,7 +10,7 @@ export default function Projects() {
 
 
     const projects = allProjects.map((el, index) => (
-        <div className={`projects-container ${shouldAnimate ? 'reveal-side' : ''}`} style={{ animationDelay: '1200ms' }} Key={index} ref={elementRef}>
+        <div className={`projects-container ${shouldAnimate ? 'reveal-side' : ''}`} style={{ animationDelay: '1200ms' }} Key={index} >
             <div className='project-header-container'>
                 <img className='projects-header-photo' src={el.src} alt='header-img' />
                 <div className='project-description'>
@@ -29,7 +29,7 @@ export default function Projects() {
     ))
     return (
         <>
-            <div id="projects" className={`main-projects-container ${shouldAnimate ? 'reveal-side' : ''}`} >
+            <div ref={elementRef} id="projects" className={`main-projects-container ${shouldAnimate ? 'reveal-side' : ''}`} >
                 <h1 style={{ animationDelay: '500ms' }}>Projects</h1>
 
                 {projects}
