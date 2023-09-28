@@ -41,7 +41,7 @@
     color: rgb(53, 82, 160);
 }
 
-.project-header-container img {
+.projects-header-photo {
     width: 400px;
     border-radius: 10px;
     object-fit: cover;
@@ -60,10 +60,10 @@
     padding-left: 33px;
 }
 
-.project-description img {
+.header-title-image {
     width: 40px;
-    padding-left: 20px;
-    margin-bottom: 1em;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 .project-description h2 {
@@ -80,6 +80,10 @@
 .demo a+a {
     margin-left: 50px;
     cursor: pointer;
+}
+
+.git-image {
+    width: 40px;
 }
 
 @media (max-width:898px) {

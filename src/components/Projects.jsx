@@ -21,7 +21,7 @@ export default function Projects() {
                     <h4 className='project-description-paragraph'>{el.projectParagraph}</h4>
                     <div className='demo'>
                         <a href={el.demoLink} target="_blank" rel='noreferrer'>Live Demo </a>
-                        <a href={el.codeLink} target='_blank' rel='noreferrer'>Code <img src={el.gitImg} alt='git-img' /></a>
+                        <a href={el.codeLink} target='_blank' rel='noreferrer'>Code <img src={el.gitImg} alt='git-img' className='git-image' /></a>
                     </div>
                 </div>
             </div>
