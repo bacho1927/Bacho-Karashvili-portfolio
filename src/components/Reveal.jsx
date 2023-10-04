@@ -9,7 +9,7 @@ export default function Reveal() {
             const elementPosition = elementRef.current.getBoundingClientRect().top;
 
 
-            if (elementPosition <= window.innerHeight - 150) {
+            if (elementPosition <= window.innerHeight - 250) {
                 setShouldAnimate(true);
                 window.removeEventListener('scroll', handleScroll);
             }
